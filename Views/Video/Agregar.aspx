@@ -4,13 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Agregar</title>
 </head>
 <body>
     <div>
-         
-        <a href="/Video/Index">Ver Contenido</a>
-      
+        <a href="/Video/Mostrar">Mostrar</a>
+        <a href="/Video/Eliminar">Eliminar</a>
+         <a href="/Video/Modificar">Modificar</a>
+        <h1>Agregando</h1>
     </div>
 </body>
 </html>

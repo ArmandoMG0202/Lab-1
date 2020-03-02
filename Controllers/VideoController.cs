@@ -15,6 +15,22 @@ namespace MvcPlantilla.Controllers
         {
             return View();
         }
+        public ActionResult Mostrar()
+        {
+            return View();
+        }
 
+        public ActionResult Agregar()
+        {
+            return View();
+        }
+        public ActionResult Eliminar()
+        {
+            return View();
+        }
+        public ActionResult Modificar()
+        {
+            return View();
+        }
     }
 }

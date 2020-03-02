@@ -5,10 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Index</title>
+
 </head>
 <body>
     <div>
-    
+       <h1>¿Que deseas realizar con los videos? </h1>
+        <a href="/Video/Mostrar">Mostrar</a>
+        <a href="/Video/Agregar">Agregar</a>
+         <a href="/Video/Eliminar">Eliminar</a>
+          <a href="/Video/Modificar">Modificar</a>
     </div>
 </body>
 </html>
