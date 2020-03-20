@@ -14,7 +14,7 @@
 </head>
 <body>
     <div>
-      <a href="/Home/Index">Inicio</a>
+      <a href="/Home/Index">Ver Opciones</a>
 
     <h1>Videos</h1>
     Hay <%:((System.Data.DataTable)ViewData["DataVideo"]).Rows.Count %> Video(s)
