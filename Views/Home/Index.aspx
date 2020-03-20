@@ -10,7 +10,7 @@
     <div>
          
         <a href="/Video/Agregar">Agregar</a>
-      
+      <a href="/Video/Eliminar">Eliminar</a>
     </div>
 </body>
 </html>

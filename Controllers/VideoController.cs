@@ -36,11 +36,25 @@ namespace MvcPlantilla.Controllers
             BaseHelper.ejecutarSentencia("insert into video values (@idVideo, @titulo,@repro,@url)",
             CommandType.Text,
             parametros);
-            RedirectToAction("Index", "Video");
+            RedirectToAction("Index", "Home");
             return View();
         }
         public ActionResult Eliminar()
         {
+            return View();
+        }
+        //Procesa datos
+        [HttpPost]
+        public ActionResult Eliminar(int idVideo)
+        {
+            //Guardar en la base de datos 
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", idVideo));
+
+            BaseHelper.ejecutarSentencia("delete from video where idVideo=@idVideo",
+            CommandType.Text,
+            parametros);
+            RedirectToAction("Index", "Home");
             return View();
         }
         public ActionResult Modificar()

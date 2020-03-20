@@ -7,11 +7,20 @@
     <title>Eliminar</title>
 </head>
 <body>
+  
+    <a href="/Home/Index">Ver Opciones</a>
+ <form action="/video/Eliminar" method="post">
+<fieldset>
+
+<legend>Datos del video</legend>
+
+<label for="idVideo">IdVideo</label>
+<input type="text" name="idVideo" />
+
+<input type="submit" value="Registro" />
+
     <div>
-    <a href="/Video/Agregar">Agregar</a>
-    <a href="/Video/Mostrar">Mostrar</a>
-     <a href="/Video/Modificar">Modificar</a>
-        <h1>Eliminando</h1>
+
     </div>
 </body>
 </html>
