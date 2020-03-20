@@ -9,7 +9,7 @@
 <body>
     <div>
          
-        <a href="/Video/Index">Ver Contenido</a>
+        <a href="/Video/Agregar">Agregar</a>
       
     </div>
 </body>

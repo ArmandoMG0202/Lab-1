@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.SqlClient;
+using System.Data;
+using MVCPlantilla.Utilerias;
 
 namespace MvcPlantilla.Controllers
 {
@@ -11,10 +14,6 @@ namespace MvcPlantilla.Controllers
         //
         // GET: /Video/
 
-        public ActionResult Index()
-        {
-            return View();
-        }
         public ActionResult Mostrar()
         {
             return View();
@@ -22,6 +21,22 @@ namespace MvcPlantilla.Controllers
 
         public ActionResult Agregar()
         {
+            return View();
+        }
+        //Procesa datos
+        [HttpPost]
+        public ActionResult Agregar(int idVideo, string titulo, int repro, string url)
+        {
+            //Guardar en la base de datos 
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", idVideo));
+            parametros.Add(new SqlParameter("@titulo", titulo));
+            parametros.Add(new SqlParameter("@repro", repro));
+            parametros.Add(new SqlParameter("@url", url));
+            BaseHelper.ejecutarSentencia("insert into video values (@idVideo, @titulo,@repro,@url)",
+            CommandType.Text,
+            parametros);
+            RedirectToAction("Index", "Video");
             return View();
         }
         public ActionResult Eliminar()

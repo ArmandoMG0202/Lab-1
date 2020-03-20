@@ -6,12 +6,37 @@
 <head runat="server">
     <title>Agregar</title>
 </head>
+<meta charset="UTF-8">
+    <meta name="description" content="ASP.NET MVC 2 CRUD Video">
+    <meta name="Keywords" content="ASP.NET, MVC, FACPYA">
+    <meta name="Author" content="Armando Enrique Mascorro Garcia">
+    <meta name="viewport" content="width=Device-width,Initial-scale=1.0">
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+
+</head>
 <body>
+<a href="/Video/Index">Ver Opciones</a>
+<form action="/video/Agregar" method="post">
+<fieldset>
+
+<legend>Datos del video</legend>
+
+<label for="idVideo">IdVideo</label>
+<input type="text" name="idVideo" />
+
+<label for="titulo">Titulo</label>
+<input type="text" name="titulo" />
+
+<label for="repro">Reproducciones</label>
+<input type="text" name="repro" />
+
+<label for="url">Url</label>
+<input type="text" name="url" />
+
+<input type="submit" value="Registro" />
+
     <div>
-        <a href="/Video/Mostrar">Mostrar</a>
-        <a href="/Video/Eliminar">Eliminar</a>
-         <a href="/Video/Modificar">Modificar</a>
-        <h1>Agregando</h1>
+
     </div>
 </body>
 </html>
