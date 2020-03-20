@@ -16,6 +16,7 @@ namespace MvcPlantilla.Controllers
 
         public ActionResult Mostrar()
         {
+            ViewData["DataVideo"] = BaseHelper.ejecutarConsulta("SELECT * FROM video", CommandType.Text);
             return View();
         }
 

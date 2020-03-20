@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
+
     <title>Agregar</title>
-</head>
 <meta charset="UTF-8">
     <meta name="description" content="ASP.NET MVC 2 CRUD Video">
     <meta name="Keywords" content="ASP.NET, MVC, FACPYA">
@@ -15,7 +15,7 @@
 
 </head>
 <body>
-<a href="/Video/Index">Ver Opciones</a>
+<a href="/Home/Index">Ver Opciones</a>
 <form action="/video/Agregar" method="post">
 <fieldset>
 
